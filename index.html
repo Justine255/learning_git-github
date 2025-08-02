@@ -3,7 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1c8b97cbe4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page-layout">
+      <aside class="navigation-layout">
+        <h2>HelpDesk</h2>
+        <hr />
+        <div class="nav-button">
+          <i class="fa-solid fa-plus"></i>
+          <p>Create Ticket</p>
+        </div>
+        <div class="nav-button">
+          <i class="fa-solid fa-ticket"></i>
+          <p>My Tickets</p>
+        </div>
+        <div class="nav-button">
+          <i class="fa-solid fa-chart-line"></i>
+          <p>Admin Dashboard</p>
+        </div>
+      </aside>
+      <main class="main-content">
+        <header>
+          <div class="header-div">
+            <h1>Admin Dashboard</h1>
+            <p>Manage and monitor all support tickets</p>
+          </div>
+        </header>
+        <section class="cards">
+          <div class="card-info">
+            <div>
+              <p>Open Tickets</p>
+              <p class="ticket">24</p>
+            </div>
+            <div class="danger-icon">
+              <i class="fa-solid fa-exclamation"></i>
+            </div>
+          </div>
+          <div class="card-info">
+            <div>
+              <p>In Progress</p>
+              <p class="progress">18</p>
+            </div>
+            <div class="clock-icon"><i class="fa-solid fa-clock"></i></div>
+          </div>
+          <div class="card-info">
+            <div>
+              <p>Closed</p>
+              <p class="closed">156</p>
+            </div>
+            <div class="check-icon"><i class="fa-solid fa-check"></i></div>
+          </div>
+          <div class="card-info">
+            <div>
+              <p>Ave.Response</p>
+              <p class="response">2.5h</p>
+            </div>
+            <div class="response-icon">
+              <i class="fa-brands fa-stack-exchange"></i>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="search-filter">
+            <input type="text" placeholder="Search tickets..." />
+            <label for="cars"></label>
+            <select id="status" name="cars">
+              <option value="volvo">All Status</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+            <select id="categories" name="cars">
+              <option value="volvo">All Categories</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+            <div class="button-div">
+              <button><i class="fa-solid fa-filter"></i>Filter</button>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="table-contents">
+            <table border="1">
+              <tr>
+                <th>Ticket Id</th>
+                <th>Subjects</th>
+                <th>User</th>
+                <th>Status</th>
+                <th>Priority</th>
+                <th>Created</th>
+                <th>Actions</th>
+              </tr>
+              <tr align="center">
+                <td>#TK-001</td>
+                <td>Login Issues with Portal</td>
+                <td>John Smith</td>
+                <td>Open</td>
+                <td>High</td>
+                <td>2 hours ago</td>
+                <td>
+                  <div class="table-btn">
+                    <button class="view">View</button
+                    ><button class="assign">Assign</button>
+                  </div>
+                </td>
+              </tr>
+              <tr align="center">
+                <td>#TK-002</td>
+                <td>Login Issues with Portal</td>
+                <td>John Smith</td>
+                <td>Open</td>
+                <td>High</td>
+                <td>2 hours ago</td>
+                <td>
+                  <div class="table-btn">
+                    <button class="view">View</button
+                    ><button class="assign">Assign</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7">
+                  <div class="pagination">
+                    Showing 1-10 of 42 results
+                    <div class="pagination-button">
+                      <button>Previous</button><a href="" class="active">1</a>
+                      <a href="">2</a><button>Next</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
